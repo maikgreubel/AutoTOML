@@ -18,7 +18,7 @@ endif()
 
 # ---- Dependencies ----
 
-find_package(tomlplusplus REQUIRED CONFIG)
+find_package(tomlplusplus REQUIRED)
 
 # ---- Add source files ----
 
