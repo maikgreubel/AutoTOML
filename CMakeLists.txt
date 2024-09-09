@@ -18,7 +18,14 @@ endif()
 
 # ---- Dependencies ----
 
-find_package(tomlplusplus REQUIRED)
+# find_package(tomlplusplus REQUIRED CONFIG)
+include(FetchContent)
+FetchContent_Declare(
+    tomlplusplus
+    GIT_REPOSITORY https://github.com/marzer/tomlplusplus.git
+    GIT_TAG        v3.4.0
+)
+FetchContent_MakeAvailable(tomlplusplus)
 
 # ---- Add source files ----
 
